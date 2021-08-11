@@ -23,6 +23,7 @@ public class App {
                     Exe2_ArraysASC.start();
                     break;
                 case 3:
+                    Exe3_CountWithIf.start();
                     break;
                 case 4:
                     break;
