@@ -1,8 +1,8 @@
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Exe1_PrimeArrays {
+public class Exe2_ArraysASC {
+
     public static Scanner input = new Scanner(System.in);
 
     public static void start(){
@@ -34,26 +34,13 @@ public class Exe1_PrimeArrays {
             array[i] = input.nextInt();
         }
         System.out.println("Mảng: "+ Arrays.toString(array));
-        System.out.println("Đây là mảng các số nguyên tố: "+ checkPrimeArrays(array));
+        System.out.println("Đây là mảng các số tăng dần: "+ checkSortASC(array));
 
     }
 
-    public static boolean isPrimeNumber(int n) {
-        if (n < 2) {
-            return false;
-        }
-        int squareRoot = (int) Math.sqrt(n);
-        for (int i = 2; i <= squareRoot; i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public static boolean checkPrimeArrays(int arr[]){
-        for (int i = 0; i < arr.length; i++) {
-            if ( !isPrimeNumber(arr[i]))
+    public static boolean checkSortASC(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] <= arr[i-1])
                 return false;
         }
         return true;

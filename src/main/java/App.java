@@ -20,6 +20,7 @@ public class App {
                     Exe1_PrimeArrays.start();
                     break;
                 case 2:
+                    Exe2_ArraysASC.start();
                     break;
                 case 3:
                     break;
