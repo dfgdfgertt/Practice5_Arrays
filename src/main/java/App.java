@@ -26,6 +26,7 @@ public class App {
                     Exe3_CountWithIf.start();
                     break;
                 case 4:
+                    Exe4_SumPrimeArrays.start();
                     break;
                 case 0:
                     choose = false;
