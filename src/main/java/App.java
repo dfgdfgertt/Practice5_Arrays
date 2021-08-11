@@ -17,6 +17,7 @@ public class App {
             int num = input.nextInt();
             switch (num){
                 case 1:
+                    Exe1_PrimeArrays.start();
                     break;
                 case 2:
                     break;
